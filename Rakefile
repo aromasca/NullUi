@@ -4,15 +4,15 @@ require "stringex"
 
 ## -- Rsync Deploy config -- ##
 # Be sure your public key is listed in your server's ~/.ssh/authorized_keys file
-#ssh_user       = "aromasca@blog"
-#ssh_port       = "22"
-#document_root  = "/var/www/aromasca.net/public_html"
-#rsync_delete   = true
-#rsync_args     = ""  # Any extra arguments to pass to rsync
-#deploy_default = "rsync"
+ssh_user       = "aromasca@blog"
+ssh_port       = "22"
+document_root  = "/var/www/aromasca.net/public_html"
+rsync_delete   = true
+rsync_args     = ""  # Any extra arguments to pass to rsync
+deploy_default = "rsync"
 
-deploy_default = "s3"
-s3_bucket = "aromasca.net"
+#deploy_default = "s3"
+#s3_bucket = "aromasca.net"
 
 # This will be configured for you when you run config_deploy
 deploy_branch  = "gh-pages"
